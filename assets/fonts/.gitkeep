@@ -1,0 +1,23 @@
+# assets/fonts Directory
+
+This directory should contain the SF Pro Display font files for optimal design.
+
+## Font Files Needed
+
+- SF-Pro-Display-Regular.ttf
+- SF-Pro-Display-Medium.ttf
+- SF-Pro-Display-Semibold.ttf
+- SF-Pro-Display-Bold.ttf
+
+## Don't have the fonts?
+
+The app will still work! It will use your system's default font.
+
+To disable font references and avoid warnings:
+
+1. Open `pubspec.yaml`
+2. Comment out or remove the `fonts:` section
+3. Open `lib/theme/app_theme.dart`
+4. Change all `fontFamily: 'SF Pro Display'` to `fontFamily: 'System'` or remove the fontFamily parameter
+
+The app will automatically fall back to the system font.

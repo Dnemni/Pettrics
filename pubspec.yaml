@@ -1,0 +1,46 @@
+name: pettrics
+description: A modern pet care tracking application - Apple Health for pets
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core
+  cupertino_icons: ^1.0.6
+  
+  # UI & Animations
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  
+  # Charts & Visualization
+  fl_chart: ^0.66.0
+  
+  # Utilities
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Fonts are optional - app will use system fonts if not provided
+  # Uncomment below and add SF Pro Display fonts to assets/fonts/ to use custom fonts
+  # See FONTS.md for instructions
+  # fonts:
+  #   - family: SF Pro Display
+  #     fonts:
+  #       - asset: assets/fonts/SF-Pro-Display-Regular.ttf
+  #       - asset: assets/fonts/SF-Pro-Display-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/SF-Pro-Display-Semibold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/SF-Pro-Display-Bold.ttf
+  #         weight: 700
