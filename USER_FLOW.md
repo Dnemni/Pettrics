@@ -113,6 +113,9 @@ This document describes the user flow and feature set for the Pettrics Flutter M
 
 ## Revision History
 - 2025-12-17: Initial user flow and feature doc created.
+- 2025-12-17: Added authentication and onboarding section with Firebase integration plan.
+- 2025-12-17: Implemented Firebase Auth integration with login/signup screens and onboarding flow.
+- 2025-12-17: Fixed iOS deployment target issues and configured CocoaPods for iOS 16.4+.
 
 ---
 

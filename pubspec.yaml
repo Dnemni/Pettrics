@@ -23,11 +23,24 @@ dependencies:
   # Utilities
   intl: ^0.19.0
 
-  # Firebase
-  firebase_core: ^2.25.4
-  firebase_auth: ^4.17.4
-  cloud_firestore: ^4.15.7
-  firebase_storage: ^11.6.7
+  # Firebase - Note: Firestore temporarily removed due to gRPC compilation issues on iOS simulator
+  # Will need to either: use REST API, wait for gRPC fix, or test on physical device
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  # cloud_firestore: ^4.14.0  # Temporarily disabled - requires gRPC which has -G flag issue
+  firebase_storage: ^11.5.6
+  
+  # Google Sign-In - temporarily disabled due to GoogleUtilities version conflict with Firebase SDK 10.25
+  # google_sign_in: ^6.1.5
+  
+  # HTTP for Firestore REST API
+  http: ^1.1.0
+  
+  # Notifications
+  flutter_local_notifications: ^16.3.0
+  
+  # Calendar
+  table_calendar: ^3.0.9
 
 dev_dependencies:
   flutter_test:
