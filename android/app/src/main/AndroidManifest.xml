@@ -1,4 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.5252.pettrics">
     <application
         android:label="pettrics"
         android:name="${applicationName}"

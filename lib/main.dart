@@ -7,6 +7,9 @@ import 'screens/home_dashboard_screen.dart';
 import 'screens/insights_screen.dart';
 import 'screens/schedule_screen.dart';
 import 'screens/profile_screen.dart';
+import 'screens/auth/login_screen.dart';
+import 'screens/auth/signup_screen.dart';
+import 'screens/auth/onboarding_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,7 +35,13 @@ class PettricsApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: buildLightTheme(),
       darkTheme: buildDarkTheme(),
-      home: const PettricsHome(),
+      initialRoute: '/login',
+      routes: {
+        '/login': (context) => const LoginScreen(),
+        '/signup': (context) => const SignupScreen(),
+        '/onboarding': (context) => const OnboardingScreen(),
+        '/dashboard': (context) => const PettricsHome(),
+      },
     );
   }
 }
